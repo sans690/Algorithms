@@ -1,0 +1,14 @@
+/Users/saniyahsmith/Algorithms/bin/Debug/net10.0/Algorithms
+/Users/saniyahsmith/Algorithms/bin/Debug/net10.0/Algorithms.deps.json
+/Users/saniyahsmith/Algorithms/bin/Debug/net10.0/Algorithms.runtimeconfig.json
+/Users/saniyahsmith/Algorithms/bin/Debug/net10.0/Algorithms.dll
+/Users/saniyahsmith/Algorithms/bin/Debug/net10.0/Algorithms.pdb
+/Users/saniyahsmith/Algorithms/obj/Debug/net10.0/Algorithms.GeneratedMSBuildEditorConfig.editorconfig
+/Users/saniyahsmith/Algorithms/obj/Debug/net10.0/Algorithms.AssemblyInfoInputs.cache
+/Users/saniyahsmith/Algorithms/obj/Debug/net10.0/Algorithms.AssemblyInfo.cs
+/Users/saniyahsmith/Algorithms/obj/Debug/net10.0/Algorithms.csproj.CoreCompileInputs.cache
+/Users/saniyahsmith/Algorithms/obj/Debug/net10.0/Algorithms.dll
+/Users/saniyahsmith/Algorithms/obj/Debug/net10.0/refint/Algorithms.dll
+/Users/saniyahsmith/Algorithms/obj/Debug/net10.0/Algorithms.pdb
+/Users/saniyahsmith/Algorithms/obj/Debug/net10.0/Algorithms.genruntimeconfig.cache
+/Users/saniyahsmith/Algorithms/obj/Debug/net10.0/ref/Algorithms.dll
