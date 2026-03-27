@@ -1,0 +1,29 @@
+Binary Search
+
+We have a target value in a sorted list.
+We calculate the middle index by taking (left index  + right index) / 2.
+
+If the value at that index is less than the target,
+we ignore that value and everything to the left, and set left = mid + 1.
+
+If the value is greater than the target,
+we ignore that value and everything to the right, and set right = mid - 1.
+
+If the value equals the target, we found it.
+
+If left > right, the target is not in the list.
+
+
+Quick Sort
+
+We have an unsorted list.
+We choose a pivot and move it to the last index.
+We keep a tracking index i that marks where smaller elements should go.
+We loop through the list (excluding the pivot at the end).
+
+For each element:
+If the current value is less than the pivot, swap the current value with the value at index i, increment i.
+If the value is greater than the pivot, do nothing.
+
+After the loop is complete, swap the pivot (at the end) with the value at index i
+This puts the pivot in its correct sorted position.

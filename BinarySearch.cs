@@ -8,21 +8,21 @@ class BinarySearch
         int target = 4;
         bool isFound = false;
 
-        int leftIndex = 0;
-        int rightIndex = numbers.Count - 1;
+        int left = 0;
+        int right = numbers.Count - 1;
 
 
-        while (leftIndex <= rightIndex && isFound == false)
+        while (left <= right && isFound == false)
         {
-            int average = (leftIndex + rightIndex) / 2;
+            int average = (left + right) / 2;
             if (numbers[average] < target)
             {
-                leftIndex = average + 1;
+                left = average + 1;
             }
 
             else if (numbers[average] > target)
             {
-                rightIndex = average - 1;
+                right = average - 1;
             }
 
             else
@@ -30,6 +30,10 @@ class BinarySearch
                 isFound = true;
                 Console.WriteLine($"Target found at {average}");
             }
+        }
+        if (left > right)
+        {
+            Console.WriteLine("Target not found");
         }
     }
 }
