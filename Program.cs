@@ -4,6 +4,7 @@ class Programs
 {
     public static void Main(string[] args)
     {
-        BinarySearch.Run(args);
+        // BinarySearch.Run(args);
+        QuickSort.Run(args);
     }
 }

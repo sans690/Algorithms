@@ -12,3 +12,4 @@
 /Users/saniyahsmith/Algorithms/obj/Debug/net10.0/Algorithms.pdb
 /Users/saniyahsmith/Algorithms/obj/Debug/net10.0/Algorithms.genruntimeconfig.cache
 /Users/saniyahsmith/Algorithms/obj/Debug/net10.0/ref/Algorithms.dll
+/Users/saniyahsmith/Algorithms/obj/Debug/net10.0/Algorithms.sourcelink.json
