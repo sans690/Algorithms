@@ -8,21 +8,21 @@ class BinarySearch
         int target = 4;
         bool isFound = false;
 
-        int left = 0;
-        int right = numbers.Count - 1;
+        int leftIndex = 0;
+        int rightIndex = numbers.Count - 1;
 
 
-        while (left <= right && isFound == false)
+        while (leftIndex <= rightIndex && isFound == false)
         {
-            int average = (left + right) / 2;
+            int average = (leftIndex + rightIndex) / 2;
             if (numbers[average] < target)
             {
-                left = average + 1;
+                leftIndex = average + 1;
             }
 
             else if (numbers[average] > target)
             {
-                right = average - 1;
+                rightIndex = average - 1;
             }
 
             else

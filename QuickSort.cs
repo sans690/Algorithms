@@ -2,7 +2,6 @@ using System;
 
 class QuickSort
 {
-
     public static void Run(string[] args)
     {
         List<int> numbers = new List<int> { 2, 3, 5, 6, 1 };
