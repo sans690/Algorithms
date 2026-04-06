@@ -27,3 +27,12 @@ If the value is greater than the pivot, do nothing.
 
 After the loop is complete, swap the pivot (at the end) with the value at index i
 This puts the pivot in its correct sorted position.
+
+
+Dijkstra's
+Start at your source node (distance = 0)
+Look at all neighbors and record their distances
+Among all possible next nodes, pick the one with the smallest total distance from the start
+“Lock it in” (this node is now finalized)
+Update distances to its neighbors
+Repeat until you reach the destination (or finish all nodes)
