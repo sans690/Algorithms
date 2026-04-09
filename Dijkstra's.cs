@@ -33,19 +33,26 @@ class Dijkstra
 
     public static void FindBestPath()
     {
-        int bestWeightOverall = 0;
-        int weightSoFar = 0;
+
+        // var distance = 0;
+        // var nextVertex = 0;
+        // var currenTVertex = 0;
+
         List<string> vertices = ["A", "B", "C", "D"];
-        List<List<string>> edges = [["A", "0"], ["B", "4"], ["C", "2"], ["D", "2"], ["D", "1"]];
+
+        List<List<string>> A = [[vertices[1], "4"], [vertices[2], "2"]];
+        List<List<string>> B = [[vertices[3], "1"]];
+        List<List<string>> C = [[vertices[3], "2"]];
+
+
+        for (int i = 0; i < A.Count; i++)
+        {
+            int.TryParse(A[i][1], out int weight);
+            Console.WriteLine(A[i][1]);
+            
+
+        }
+
         List<string> bestPath = new List<string> { };
-        
-
-
-
-
-
-
-
-
     }
 }
