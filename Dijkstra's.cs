@@ -33,26 +33,50 @@ class Dijkstra
 
     public static void FindBestPath()
     {
-
-        // var distance = 0;
-        // var nextVertex = 0;
-        // var currenTVertex = 0;
+        List<int> distanceList = new List<int> { };
+        int edgeWeight = 0;
 
         List<string> vertices = ["A", "B", "C", "D"];
 
-        List<List<string>> A = [[vertices[1], "4"], [vertices[2], "2"]];
-        List<List<string>> B = [[vertices[3], "1"]];
-        List<List<string>> C = [[vertices[3], "2"]];
+        // List<string> currentVertex = A[0];
+        // string currentVertexWeightString = currentVertex[1];
+        // int.TryParse(currentVertexWeightString, out int currentVertexWeight);
+        // int currentVertexDistance = 0;
+        // currentVertexDistance += currentVertexWeight;
 
 
-        for (int i = 0; i < A.Count; i++)
+        // List<string> neighborVertex = A[1];
+        // string neighborVertexWeightString = neighborVertex[1];
+        // int.TryParse(neighborVertexWeightString, out int neighborVertexWeight);
+        // int neighborVertexDistance = 0;
+        // neighborVertexDistance += neighborVertexWeight;
+
+
+        Dictionary<string, List<List<string>>> graph = new()
         {
-            int.TryParse(A[i][1], out int weight);
-            Console.WriteLine(A[i][1]);
-            
+           { "A", [[vertices[1], "4"], [vertices[2], "2"]]},
+            {"B", [[vertices[3], "1"]]},
+            {"C", [[vertices[3], "2"]]},
+            {"D", []}
+        };
+
+        foreach (var item in graph["A"])
+        {
+            string name = item[0];
+            edgeWeight = int.Parse(item[1]);
+            distanceList.Add(edgeWeight);
+
+            Console.WriteLine(distanceList);
+
+            int smallest = 0;
+            for (int i = 0; i < graph["A"].Count; i++)
+
+            {
+            }
+
 
         }
 
-        List<string> bestPath = new List<string> { };
+
     }
 }
