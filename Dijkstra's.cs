@@ -1,4 +1,5 @@
 using System;
+using System.Runtime.Versioning;
 
 class Dijkstra
 {
@@ -38,27 +39,17 @@ class Dijkstra
 
         List<string> vertices = ["A", "B", "C", "D"];
 
-        // List<string> currentVertex = A[0];
-        // string currentVertexWeightString = currentVertex[1];
-        // int.TryParse(currentVertexWeightString, out int currentVertexWeight);
-        // int currentVertexDistance = 0;
-        // currentVertexDistance += currentVertexWeight;
-
-
-        // List<string> neighborVertex = A[1];
-        // string neighborVertexWeightString = neighborVertex[1];
-        // int.TryParse(neighborVertexWeightString, out int neighborVertexWeight);
-        // int neighborVertexDistance = 0;
-        // neighborVertexDistance += neighborVertexWeight;
-
+        // need to make a new dictionary that stores the best distance for each vertex, need to start at A
 
         Dictionary<string, List<List<string>>> graph = new()
         {
            { "A", [[vertices[1], "4"], [vertices[2], "2"]]},
-            {"B", [[vertices[3], "1"]]},
+            {"B", [[vertices[3], "1"], [vertices[3], "6"]]},
             {"C", [[vertices[3], "2"]]},
             {"D", []}
         };
+
+        int smallest = 0;
 
         foreach (var item in graph["A"])
         {
@@ -66,17 +57,38 @@ class Dijkstra
             edgeWeight = int.Parse(item[1]);
             distanceList.Add(edgeWeight);
 
-            Console.WriteLine(distanceList);
+            smallest = distanceList[0];
 
-            int smallest = 0;
-            for (int i = 0; i < graph["A"].Count; i++)
-
+            for (int i = 0; i < distanceList.Count; i++)
             {
+                if (distanceList[i] < smallest)
+                {
+                    smallest = distanceList[i];
+                }
             }
-
-
         }
+        Console.WriteLine(smallest);
 
+        List<int> tempDistanceList = new List<int> { };
+        // int tempSmallest = 0;      
+        // int bestDistance = 0;
+        int totalWeight = 0;
+        totalWeight = totalWeight + smallest;
 
+        foreach (var item in graph["B"])
+        {
+            string name = item[0];
+            int tempEdgeWeight = int.Parse(item[1]);
+
+            tempDistanceList.Add(tempEdgeWeight);
+            // tempSmallest = tempDistanceList[0];
+
+            // for (int i = 0; i < tempDistanceList.Count; i++)
+            // {
+            //     bestDistance = tempSmallest;
+            // }
+        }
+        // bestDistance = totalWeight + tempSmallest;
+        // Console.WriteLine(bestDistance);
     }
 }
